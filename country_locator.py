@@ -28,5 +28,7 @@ def locate():
         output.config(text=f"Location: {place.address}\nLatitude: {place.latitude}, Longitude: {place.longitude}")
     else:
         output.config(text="Location not found")
+execute_button = Button(root, text="Locate", command=locate)
+execute_button.pack()
 
 root.mainloop()
