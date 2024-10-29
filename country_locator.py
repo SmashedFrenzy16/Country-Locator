@@ -16,4 +16,17 @@ place_entry.pack()
 
 place_entry.insert(0, "Enter in the name of the place you want to locate")
 
+def locate():
+
+    locator = Nominatim(user_agent="myGeocoder")
+    place = locator.geocode(place_entry.get())
+
+    output = Label(root, text="")
+    output.pack()
+
+    if place:
+        output.config(text=f"Location: {place.address}\nLatitude: {place.latitude}, Longitude: {place.longitude}")
+    else:
+        output.config(text="Location not found")
+
 root.mainloop()
