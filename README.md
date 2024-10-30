@@ -10,5 +10,6 @@ This is a country locator app made in Python using the geopy module.
 - geopy (`pip install geopy`)
 
 ## Run
-- Run `python3 country_locator.py` in a terminal if you have Mac/Linux
+
+- Run `python3 country_locator.py` in a terminal if you have Mac/Linux.
 - Run `python country_locator.py` in a terminal id you have Windows.
